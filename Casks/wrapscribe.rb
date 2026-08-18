@@ -11,7 +11,7 @@
 # same thing by hand:
 #
 #     shasum -a 256 WrapScribe-<version>.dmg
-#     sed -e "s/1.7.2/<version>/" -e "s/bb53c33d5f716e67d7125bdbbed2c77ff4b0eba5694bbbc7474617fc334ce5c4/<digest>/" \
+#     sed -e "s/1.8.0/<version>/" -e "s/1921fdff56f79846e0279033ee0501cf92f1286e56b3e3542c9a3c79fc2f8180/<digest>/" \
 #       packaging/homebrew/wrapscribe.rb > ../homebrew-tap/Casks/wrapscribe.rb
 #
 # docs/RELEASING.md §5 has the whole sequence.
@@ -27,8 +27,8 @@ cask "wrapscribe" do
   # / `sha256 :no_check`: the URL below is versioned because releases never
   # publish a rolling "latest.dmg" — a cask pins a sha256 against a URL, so
   # content changing under a stable name would break verification for everyone.
-  version "1.7.2"
-  sha256 "bb53c33d5f716e67d7125bdbbed2c77ff4b0eba5694bbbc7474617fc334ce5c4"
+  version "1.8.0"
+  sha256 "1921fdff56f79846e0279033ee0501cf92f1286e56b3e3542c9a3c79fc2f8180"
 
   # R2, not the GitHub release asset and not wrapscribe.com: the repository is
   # private so its release assets are not publicly downloadable, and the DMG is
