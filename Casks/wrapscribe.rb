@@ -29,13 +29,12 @@ cask "wrapscribe" do
   # published to this bucket by scripts/release.sh.
   url "https://pub-c32d9a0988724edea2fd65c2ef924228.r2.dev/WrapScribe-#{version}.dmg"
   name "WrapScribe"
-  desc "On-device dictation for macOS"
+  desc "On-device dictation"
   homepage "https://wrapscribe.com/"
 
   # The app auto-updates itself (Settings → General → Check for Updates), so
   # Homebrew must not also try to manage versions or the two will fight.
   auto_updates true
-
   # The core binary uses macOS 26-only APIs (SpeechAnalyzer, Foundation
   # Models). The bundle's launcher deploys back to 13 purely so older systems
   # get a readable alert instead of a Launch Services error, which is not a
